@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desing Responsivo</title>
+    <title>Desing Responsivo - Sobre nós</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <a href="index.html">Desing Responsivo</a>
-        <nav>
-            <button>Abrir/Fecha menu</button>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contato.html">Contato</a></li>
+    <header class="cabecalho">
+        <a href="index.html" class="logo">Desing Responsivo</a>
+        <nav class="menu-principal">
+            <button class="menu-principal__btn">Abrir/Fecha menu</button>
+            <ul class="menu-principal__lista">
+                <li><a class="menu-principal__item" href="index.html">Home</a></li>
+                <li><a class="menu-principal__item menu-principal__item--atual" href="sobre.html">Sobre Nós</a></li>
+                <li><a class="menu-principal__item" href="portfolio.html">Portfolio</a></li>
+                <li><a class="menu-principal__item" href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -43,34 +45,41 @@
             </section>
         </article>
     </main>
-    <footer>
-        <div>
-            <div>
-                <a href="index.Html">Desing Responsivo</a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat molestias quam aliquam eveniet
+    <footer class="rodape">
+        <div class="rodape__linda-1">
+            <div class="rodape__coluna">
+                <a href="index.Html" class="logo logo--branco">Desing Responsivo</a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat molestias quam aliquam eveniet
                     explicabo. Veritatis debitis velit temporibus dolores, commodi voluptatum dolor hic, sed, enim
-                    dolore eaque maxime id eum?</p>
+                    dolore
+                    eaque maxime id eum?
+                </p>
             </div>
-            <div>
-                <h2>Social</h2>
-                <ul>
-                    <li><a href="https://twitter.com/@Rato_1809" target="_blank">Twitter</a></li>
-                    <li><a href="https://facebook.com/Gabriel Passos" target="_blank">Facebook</a></li>
-                    <li><a href="https://instagram.com/passos_2000" target="_blank">Instagram</a></li>
+            <div class="rodape__coluna">
+                <h2 class="rodape__titulo">Social</h2>
+                <ul class="rodape__lista-links">
+                    <li><a class="rodape__lista-links__item" href="https://twitter.com/@Rato_1809"
+                            target="_blank">Twitter</a></li>
+                    <li><a class="rodape__lista-links__item" href="https://facebook.com/Gabriel Passos"
+                            target="_blank">Facebook</a></li>
+                    <li><a class="rodape__lista-links__item" href="https://instagram.com/passos_2000"
+                            target="_blank">Instagram</a></li>
                 </ul>
-                <div>
-                    <h2>Links</h2>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="sobre.html">Sobre Nós</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contato.html">Contato</a></li>
+                <div class="rodape__coluna">
+                    <h2 class="rodape__titulo">Links</h2>
+                    <ul class="rodape__lista-links">
+                        <li><a class="rodape__lista-links__item" href="index.html">Home</a></li>
+                        <li><a class="rodape__lista-links__item" href="sobre.html">Sobre Nós</a></li>
+                        <li><a class="rodape__lista-links__item" href="portfolio.html">Portfolio</a></li>
+                        <li><a class="rodape__lista-links__item" href="contato.html">Contato</a></li>
                     </ul>
                 </div>
             </div>
-            <div>
-                2021-Todos os direitos reservados - Gabriel Passos
-            </div>
+        </div>
+        <div class="rodape__linha-2">
+            2021-Todos os Direitos Reservados - Gabriel Passos
+        </div>
     </footer>
 </body>
 
