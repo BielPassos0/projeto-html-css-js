@@ -332,10 +332,6 @@ template {
   display: none; }
 
 /*Layout-->*/
-.container {
-  max-width: 1200px;
-  margin: 0 auto; }
-
 .cabecalho {
   background-color: #fff;
   padding: 15px; }
@@ -343,66 +339,79 @@ template {
 /*Rodapé*/
 .rodape {
   color: #fff; }
-  .rodape .rodape .logo {
-    margin-top: 20px; }
-  .rodape__linha-1 {
-    background-color: #000;
-    background-image: url("../portfolio/img/rodape-bg-md.jpg");
-    background-size: cover;
-    padding: 15px; }
-  .rodape__linha-2 {
-    background-color: #000;
-    text-align: center;
-    padding: 15px; }
-  .rodape__coluna {
-    margin-top: 40px;
-    margin-bottom: 40px; }
-  .rodape__titulo {
-    border-bottom: 1px solid #fff;
-    padding: 0 10px 10px 10px;
-    font-size: 18px; }
-  .rodape__lista-links {
-    padding: 0;
-    list-style-type: none; }
-  .rodape__lista-links__item {
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 10px;
-    display: block; }
-  .rodape__lista-links__item::before {
-    content: ">";
-    margin-right: 8px;
-    color: #f44242; }
+
+.rodape .logo {
+  margin-top: 20px; }
+
+.rodape__linha-1 {
+  background-color: #272525;
+  background-image: url("../../portfolio/img/rodape-bg-md.jpg");
+  background-size: cover;
+  padding: 15px; }
+
+.rodape__linha-2 {
+  background-color: #000;
+  text-align: center;
+  padding: 15px; }
+
+.rodape__coluna {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.rodape__titulo {
+  border-bottom: 1px solid #fff;
+  padding: 0 10px 10px 10px;
+  font-size: 18px; }
+
+.rodape__lista-links {
+  padding: 0;
+  list-style-type: none; }
+
+.rodape__lista-links__item {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block; }
+
+.rodape__lista-links__item::before {
+  content: ">";
+  margin-right: 8px;
+  color: #42d0f4; }
 
 /*Componets-->*/
 .text-center {
   text-align: center; }
 
 .depoimentos {
-  background-color: #f44242;
+  background-color: #42d0f4;
   background-image: url("../../portfolio/img/cabecalho-pagina-bg.jpg");
   background-attachment: fixed;
   color: #fff;
   padding: 30px 0; }
-  .depoimentos__item {
-    padding: 0 15px; }
-  .depoimentos__img {
-    margin: 0 auto;
-    display: block;
-    box-shadow: 3px 3px 0px #000; }
-  .depoimentos__texto {
-    line-height: 24px; }
-  .depoimentos__texto::before {
-    background: url("../portfolio/img/aspas.png") no-repeat;
-    content: '';
-    display: inline-block;
-    width: 25px;
-    height: 23px;
-    margin-right: 5px; }
-  .depoimentos__pessoa {
-    text-align: center;
-    font-weight: bold;
-    font-style: italic; }
+
+.depoimentos__item {
+  padding: 0 15px; }
+
+.depoimentos__img {
+  margin: 0 auto;
+  display: block;
+  box-shadow: 3px 3px 0px #000; }
+
+.depoimentos__texto {
+  line-height: 24px; }
+
+.depoimentos__texto::before {
+  background: url("../portfolio/img/aspas.png") no-repeat;
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 23px;
+  margin-right: 5px; }
+
+.depoimentos__pessoa {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic; }
 
 .formulario {
   background-color: #efecec;
@@ -421,13 +430,13 @@ template {
   padding: 5px 5px; }
 
 .formulario__label {
-  color: #3a3a4a; }
+  color: #343434; }
 
 .formulario__botao {
-  border: 3px solid #f44242;
+  border: 3px solid #42d0f4;
   border-radius: 300px;
   background-color: #fff;
-  color: #f44242;
+  color: #42d0f4;
   padding: 5px 20px;
   cursor: pointer;
   display: block;
@@ -443,11 +452,12 @@ template {
   height: 55px;
   text-indent: -9999px;
   margin: 0; }
-  .logo--branco {
-    background-image: url("../portfolio/img/logotipo-branco.png"); }
+
+.logo--branco {
+  background-image: url("../portfolio/img/logotipo-branco.png"); }
 
 .mapa {
-  background-color: #f44242;
+  background-color: #42d0f4;
   height: 0;
   padding-bottom: 100%;
   position: relative;
@@ -489,16 +499,16 @@ template {
 .menu-principal__item {
   text-decoration: none;
   font-weight: bold;
-  color: #3a3a4a;
+  color: #343434;
   margin-bottom: 10px;
   display: block;
   font-size: 18px; }
 
 .menu-principal__item--atual {
-  color: #f44242; }
+  color: #42d0f4; }
 
 .pagina-cabecalho {
-  background-color: #f44242;
+  background-color: #42d0f4;
   background-image: url("portfolio/img/cabecalho-pagina-bg.jpg");
   background-attachment: fixed;
   color: #fff;
@@ -524,7 +534,7 @@ template {
   padding-bottom: 25px; }
 
 .pagina-conteudo p {
-  color: #3a3a4a;
+  color: #3a3a3a;
   line-height: 20px;
   margin-top: 20px;
   margin-bottom: 20px; }
@@ -533,20 +543,23 @@ template {
   padding: 15px;
   padding-top: 25px;
   padding-bottom: 25px; }
-  .pagina-conteudo-conteudo p {
-    color: #3a3a4a;
-    line-height: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px; }
+
+.pagina-conteudo p {
+  color: #3a3a3a;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .servicos {
   padding: 30px 0; }
-  .servicos__item {
-    text-align: center;
-    padding: 0 15px;
-    margin-bottom: 50px; }
-  .servicos__texto {
-    color: #3a3a4a; }
+
+.servicos__item {
+  text-align: center;
+  padding: 0 15px;
+  margin-bottom: 50px; }
+
+.servicos__texto {
+  color: #585858; }
 
 /*Pages-->*/
 .cabecalho-home {
@@ -573,7 +586,7 @@ template {
   display: block;
   width: 50px;
   height: 3px;
-  background-color: #f44242;
+  background-color: #42d0f4;
   margin: 0 auto;
   margin-top: 5px; }
 

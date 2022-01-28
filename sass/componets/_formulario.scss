@@ -15,13 +15,13 @@
     padding: 5px 5px;
 }
 .formulario__label{
-    color: #343434;
+    color: $cor-leitura;
 }
 .formulario__botao{
-    border: 3px solid #f00;
+    border: 3px solid $cor-principal;
     border-radius: 300px;
     background-color: #fff;
-    color: #f00;
+    color: $cor-principal;
     padding: 5px 20px;
     cursor: pointer;
     display: block;
