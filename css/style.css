@@ -333,12 +333,38 @@ template {
 
 /*Layout-->*/
 .container {
-  max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-rigth: 15px; }
+  @media (min-width: 576px) {
+    .container {
+      width: 540px; } }
+  @media (min-width: 768px) {
+    .container {
+      width: 720px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 960px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1140px; } }
 
 .cabecalho {
   background-color: #fff;
-  padding: 15px; }
+  padding: 15px;
+  position: fixed;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .cabecalho {
+      min-height: 100px; }
+      .cabecalho .logo {
+        float: left;
+        margin-top: 10px; }
+      .cabecalho .menu-principal {
+        float: right;
+        margin-top: 12px; }
+        .cabecalho .menu-principal__lista {
+          margin-bottom: 0; } }
 
 /*Rodapé*/
 .rodape {
@@ -478,13 +504,17 @@ template {
   position: absolute;
   top: 15px;
   right: 15px; }
-
-.menu-principal__btn--fechar {
-  background-position: -48px 7px !important; }
+  @media (min-width: 768px) {
+    .menu-principal__btn {
+      display: none; } }
 
 .menu-principal__lista {
   padding: 0;
   list-style-type: none; }
+  @media (min-width: 768px) {
+    .menu-principal__lista li {
+      display: inline-block;
+      margin: 0 10px; } }
 
 .menu-principal__item {
   text-decoration: none;
@@ -496,6 +526,10 @@ template {
 
 .menu-principal__item--atual {
   color: #f44242; }
+
+@media (max-width: 768px) {
+  .menu-principal--fechado .menu-principal__btn {
+    background-position: -48px 7px; } }
 
 .pagina-cabecalho {
   background-color: #f44242;
@@ -540,11 +574,16 @@ template {
     margin-bottom: 20px; }
 
 .servicos {
-  padding: 30px 0; }
+  padding: 30px 0;
+  overflow: auto; }
   .servicos__item {
     text-align: center;
     padding: 0 15px;
     margin-bottom: 50px; }
+    @media (min-width: 768px) {
+      .servicos__item {
+        float: left;
+        width: 33.333%; } }
   .servicos__texto {
     color: #3a3a4a; }
 
@@ -555,6 +594,9 @@ template {
   color: #fff;
   text-align: center;
   padding: 50px 0; }
+  @media (min-width: 992px) {
+    .cabecalho-home {
+      height: 100vh; } }
 
 .cabecalho-home__titulo {
   font-size: 40px;
