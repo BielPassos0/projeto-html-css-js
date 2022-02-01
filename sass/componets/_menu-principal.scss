@@ -1,55 +1,62 @@
 /*Menu*/
-.menu-principal__btn {
-    display:block;
-    width: 50px;
-    height: 50px;
-    text-indent: -9999px;
-    background-color: #fff;
-    background-image: url("../portfolio/img/menuprincipal-btn-bg.png");
-    background-repeat: no-repeat;
-    background-position: 5px 5px !important;    
-    border-color: #c4c4c4;
-    border-style: solid;
-    border-radius: 5px;
-    cursor: pointer;
-
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    @media(min-width:$breakpoint-md){
-        display: none;
-    }
-}
-.menu-principal__lista{
-    padding: 0;
-    list-style-type:none;
-    @media(min-width:$breakpoint-md){
-        li{
-            display:inline-block;
-            margin: 0 10px; 
-        }
-    }
-}
-.menu-principal__item{
-    text-decoration: none;
-    font-weight: bold;
-    color: $cor-leitura;
-    margin-bottom: 10px;
-    display: block;
-    font-size: 18px;
+.menu-principal{
+    &__btn{
+        display:block;
+        width: 50px;
+        height: 50px;
+        text-indent: -9999px;
+        background-color: #fff;
+        background-image: url("../portfolio/img/menuprincipal-btn-bg.png") !important;
+        background-repeat: no-repeat;
+        background-position:-48px 7px;
+        border-color: #c4c4c4;
+        border-style: solid;
+        border-radius: 5px;
+        cursor: pointer;
     
-}
-.menu-principal__item--atual{
-    color: $cor-principal;
-}
-@media(max-width:$breakpoint-md){
-    .menu-principal--fechado{
-        .menu-principal__btn{
-            background-position: -48px 7px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        @media(min-width:$breakpoint-md){
+            display: none;
         }
-    .menu-principal__lista{
-        
+    }  
+    &__lista{
+        padding: 0;
+        list-style: none;
+        transition: margin 200ms ease-out;
+        @media(min-width:$breakpoint-md){
+            li{
+                display:inline-block;
+                margin: 0 10px; 
+            }
+        }
     }
+    &__item{
+        text-decoration: none;
+        font-weight: bold;
+        color: $cor-leitura;
+        margin-bottom: 10px;
+        display: block;
+        font-size: 18px;
+        transition: all 200ms ease-out;        
     }
-
+    &__item--atual{
+        color: $cor-principal;
+    }
+    @media(max-width: ($breakpoint-md - 1)){
+        &--fechado{
+            .menu-principal__btn{
+                background-position: 5px 5px;
+            }
+            .menu-principal__lista{
+                margin:0;
+            }
+            .menu-principal__item{
+                margin: 0;
+                height: 0;
+                overflow: hidden;
+            }                
+        }
+    }
 }

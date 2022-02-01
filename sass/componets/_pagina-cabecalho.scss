@@ -3,21 +3,21 @@
     background-image:url("portfolio/img/cabecalho-pagina-bg.jpg");
     background-attachment: fixed;
     color: #fff;
-    padding-top: 40px;
+    padding-top: 140px;
     padding-bottom:40px;
-}
-.pagina-cabecalho__titulo{
-    text-align:center;
-    text-transform:capitalize;
-}
-.pagina-cabecalho__titulo::after{
-    content:"  ";
-    display: block;
-    width: 50px;
-    height: 3px;
-    background-color: #fff;
-    margin: 0 auto;
-    margin-top: 1px;
+    &__titulo{
+        text-align:center;
+        text-transform:capitalize;
+    }
+    &__titulo::after{
+        content:"  ";
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: #fff;
+        margin: 0 auto;
+        margin-top: 1px;
+    }
 }
 .pagina-conteudo{
     padding: 15px;

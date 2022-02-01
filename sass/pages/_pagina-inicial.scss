@@ -4,16 +4,23 @@
     color: #fff;
     text-align: center;
     padding:  50px 0;
+    padding-top: 150px;
+    @media(min-width:$breakpoint-md){
+        background-image: url(../../portfolio/img/cabecalho-home-bg-md.jpg);
+    }
     @media(min-width: $breakpoint-lg){
             height: 100vh;        
     }
-}
-.cabecalho-home__titulo{
-    font-size: 40px;
-    margin-bottom: 0px;
-}
-.cabecalho-home__role{
-    display: none; 
+    @media(min-width:$breakpoint-xl){
+        background-image: url(../../img/cabecalho-home-bg-xl.jpg);
+    }
+    &__titulo{
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+    &__role{
+        display: none; 
+    }
 }
 .home__titulo{
     text-align: center;
