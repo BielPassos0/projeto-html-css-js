@@ -5,21 +5,46 @@
     text-align: center;
     padding:  50px 0;
     padding-top: 150px;
-    @media(min-width:$breakpoint-md){
-        background-image: url(../../portfolio/img/cabecalho-home-bg-md.jpg);
-    }
-    @media(min-width: $breakpoint-lg){
-            height: 100vh;        
-    }
-    @media(min-width:$breakpoint-xl){
-        background-image: url(../../img/cabecalho-home-bg-xl.jpg);
-    }
     &__titulo{
         font-size: 40px;
         margin-bottom: 0px;
     }
     &__role{
         display: none; 
+    }
+    @media(min-width: $breakpoint-md){
+        background-image: url(../portfolio/img/cabecalho-home-bg-md.jpg);
+    }
+    @media(min-width: $breakpoint-lg){
+        height: 100vh;
+        &__titulo{
+            font-size: 60px;
+            margin-top: 72px;
+        }
+        &__subtitulo{
+            font-size: 20px;
+        }
+        &__role{
+            display:block;
+            position: absolute;
+            background: url(../img/icone-mouse.png) no-repeat center right;
+            color: #fff;
+            bottom: 3px;
+            left: 50%;
+            height: 56px;
+            width: 190px;
+            text-align: left;
+            font-size: 20px;
+            text-decoration: none;
+            line-height: 45px;
+            margin-left: -68px;
+        }        
+    }
+    @media(min-width:($breakpoint-xl + 3000)){ 
+        background-image: url(../../img/cabecalho-home-bg-xl.jpg);
+        &__titulo{
+            margin-top: 250px;
+        }
     }
 }
 .home__titulo{
