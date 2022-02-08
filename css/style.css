@@ -467,7 +467,7 @@ template {
   padding: 40px 15px 40px 15px;
   box-shadow: 0 3px 5px #989898; }
   .formulario__grupo {
-    margin: 15px; }
+    margin-bottom: 15px; }
   .formulario__campo {
     width: 100%;
     border: 1px solid #c4c4c4;
@@ -510,7 +510,7 @@ template {
     background-image: url("../portfolio/img/logotipo-branco.png"); }
 
 .mapa {
-  background-color: #000;
+  background-color: #f00;
   height: 0;
   padding-bottom: 100%;
   position: relative;
