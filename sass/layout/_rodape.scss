@@ -8,7 +8,7 @@
         background-color:#000;
         background-image:url("../portfolio/img/rodape-bg-md.jpg");    
         background-size: cover; 
-        padding: 15px; 
+        padding: 95px; 
         overflow:auto; 
     }
     &__linha-2{
@@ -41,10 +41,18 @@
         color: $cor-principal;
     }
     @media(min-width: $breakpoint-md){
+            &__linda-1{
+                background-image: url(../../img/rodape-bg-md.jpg)
+            }
         &__coluna{
-            float: left;
+            float:left;
             width: 33.333%;
             padding: 0 15px;
+        }
+    }
+    @media(min-width: $breakpoint-md){
+        &__linda-1{
+            background-image: url(../../img/rodape-bg-xl.jpg)
         }
     }
 }

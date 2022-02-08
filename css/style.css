@@ -335,7 +335,7 @@ template {
 .container {
   margin: 0 auto;
   padding-left: 15px;
-  padding-rigth: 15px; }
+  padding-right: 15px; }
   @media (min-width: 576px) {
     .container {
       width: 540px; } }
@@ -353,7 +353,8 @@ template {
   background-color: #fff;
   padding: 15px;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 99; }
   @media (min-width: 768px) {
     .cabecalho {
       min-height: 100px; }
@@ -375,7 +376,7 @@ template {
     background-color: #000;
     background-image: url("../portfolio/img/rodape-bg-md.jpg");
     background-size: cover;
-    padding: 15px;
+    padding: 95px;
     overflow: auto; }
   .rodape__linha-2 {
     background-color: #000;
@@ -401,15 +402,29 @@ template {
     margin-right: 8px;
     color: #f44242; }
   @media (min-width: 768px) {
+    .rodape__linda-1 {
+      background-image: url(../../img/rodape-bg-md.jpg); }
     .rodape__coluna {
       float: left;
       width: 33.333%;
       padding: 0 15px; } }
+  @media (min-width: 768px) {
+    .rodape__linda-1 {
+      background-image: url(../../img/rodape-bg-xl.jpg); } }
 
-/*Componets-->*/
 .text-center {
   text-align: center; }
 
+.img-left {
+  float: left; }
+
+@media (min-width: 768px) {
+  .img-left-md {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px; } }
+
+/*Componets-->*/
 .depoimentos {
   background-color: #f44242;
   background-image: url("../portfolio/img/cabecalho-pagina-bg.jpg");
@@ -469,7 +484,18 @@ template {
     cursor: pointer;
     display: block;
     margin: 0 auto;
-    font-weight: bold; }
+    font-weight: bold;
+    box-shadow: 0 3px 5px #989898; }
+  @media (min-width: 768px) {
+    .formulario__grupo {
+      float: left;
+      width: 100%; }
+    .formulario__grupo--coluna-esq {
+      width: 50%;
+      padding-right: 15px; }
+    .formulario__grupo--coluna-dir {
+      width: 50%;
+      padding-left: 15px; } }
 
 /*Logo*/
 .logo {
@@ -484,19 +510,27 @@ template {
     background-image: url("../portfolio/img/logotipo-branco.png"); }
 
 .mapa {
-  background-color: #f44242;
+  background-color: #000;
   height: 0;
   padding-bottom: 100%;
   position: relative;
   overflow: hidden;
   margin: 0px -15px -25px -15px; }
-
-.mapa iframe {
-  width: 100% !important;
-  height: 100% !important;
-  position: absolute;
-  top: 0;
-  left: 0; }
+  .mapa iframe {
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  @media (min-width: 450px) {
+    .mapa {
+      padding-bottom: 60%; } }
+  @media (min-width: 768px) {
+    .mapa {
+      padding-bottom: 40%; } }
+  @media (min-width: 992px) {
+    .mapa {
+      padding-bottom: 25%; } }
 
 /*Menu*/
 .menu-principal__btn {
@@ -581,14 +615,18 @@ template {
   margin-bottom: 20px; }
 
 .pagina-conteudo {
-  padding: 15px;
   padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  overflow: auto; }
   .pagina-conteudo-conteudo p {
     color: #3a3a4a;
     line-height: 20px;
     margin-top: 20px;
     margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    .pagina-conteudo {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
 
 .servicos {
   padding: 30px 0;
@@ -606,6 +644,11 @@ template {
     color: #3a3a4a; }
 
 /*Pages-->*/
+@media (min-width: 768px) {
+  .pagina-contato .pagina-conteudo {
+    padding-right: 150px;
+    padding-left: 150px; } }
+
 .cabecalho-home {
   background: url("../portfolio/img/cabecalho-home-bg.jpg") #000 no-repeat;
   background-size: cover;
@@ -681,3 +724,8 @@ template {
     margin-left: 15px;
     border-left: 1px solid #000;
     padding-left: 10px; }
+
+@media (min-width: 768px) {
+  .pagina-sobre .pagina-conteudo {
+    padding-right: 150px;
+    padding-left: 150px; } }

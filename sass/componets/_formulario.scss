@@ -26,5 +26,20 @@
         display: block;
         margin: 0 auto;
         font-weight: bold;
+        box-shadow: 0 3px 5px#989898;
+    }
+    @media(min-width:$breakpoint-md){
+        &__grupo{
+            float: left;
+            width: 100%;
+        }
+        &__grupo--coluna-esq{
+            width: 50%;
+            padding-right: 15px;
+        }
+        &__grupo--coluna-dir{
+            width: 50%;
+            padding-left: 15px;
+        }
     }
 }
