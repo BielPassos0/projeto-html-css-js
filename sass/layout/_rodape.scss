@@ -55,4 +55,9 @@
             background-image: url(../../img/rodape-bg-xl.jpg)
         }
     }
+    @media(min-widht: $breakpoint-sm){
+        &__linha-1{
+            padding: -6px;
+        }
+    }
 }

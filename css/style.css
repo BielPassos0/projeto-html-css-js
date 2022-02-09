@@ -412,6 +412,9 @@ template {
   @media (min-width: 768px) {
     .rodape__linda-1 {
       background-image: url(../../img/rodape-bg-xl.jpg); } }
+  @media (min-widht: 576px) {
+    .rodape__linha-1 {
+      padding: -6px; } }
 
 .text-center {
   text-align: center; }
