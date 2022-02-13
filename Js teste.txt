@@ -1,0 +1,9 @@
+let resultados = document.getElementsByClassName('cabecalho-home__titulo');
+
+resultados[0].addEventListener('click', funcaoResposta[evento]);
+
+let contador = 1;
+function funcaoResposta(evento){
+    evento.toElement.innerHTML = 'Clicou!' + contador + 'x';
+    contador++
+}

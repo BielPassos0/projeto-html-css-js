@@ -40,10 +40,16 @@
             margin-left: -68px;
         }        
     }
-    @media(min-width:($breakpoint-xl + 3000)){ 
+    @media(min-width:($breakpoint-xl + 10000)){ 
         background-image: url(../../img/cabecalho-home-bg-xl.jpg);
         &__titulo{
             margin-top: 250px;
+        }
+    }
+    @media(min-width: $breakpoint-xl){
+        &__titulo{
+            font-size: 60px;
+            margin-top: 213px;
         }
     }
 }
