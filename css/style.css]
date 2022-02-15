@@ -491,11 +491,6 @@ template {
     margin: 0 auto;
     font-weight: bold;
     box-shadow: 0 3px 5px #989898; }
-  .formulario label.error {
-    border-left: 4px solid #f00;
-    padding-left: 4px;
-    color: #f00;
-    margin-left: 3px; }
   @media (min-width: 768px) {
     .formulario {
       padding-bottom: 0; }

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desing Responsivo - Contato</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">>
 </head>
 
 <body class="pagina-contato">
@@ -22,7 +22,8 @@
                     <li><a class="menu-principal__item menu-principal__item--atual" href="contato.html">Contato</a></li>
                 </ul>
             </nav>
-        </div> <!--Fim container cabeçalho-->
+        </div>
+        <!--Fim container cabeçalho-->
     </header>
     <main>
         <header class="pagina-cabecalho">
@@ -42,9 +43,19 @@
                     <label class="formulario__label" for="email">E-mail</label><br>
                     <input class="formulario__campo" id="email" type="email" name="email">
                 </div>
+
+                <div class="formulario__grupo formulario__grupo--coluna-esq">
+                    <label class="formulario__label" for="cep">cep</label><br>
+                    <input class="formulario__campo" id="cep" type="cep" name="cep">
+                </div>
+                <div class="formulario__grupo formulario__grupo--coluna-dir">
+                    <label class="formulario__label" for="end">Endereço</label><br>
+                    <input class="formulario__campo" id="end" type="end" name="end">
+                </div>
+
                 <div class="formulario__grupo">
                     <label class="formulario__label" for="mensagem">Mensagem</label><br>
-                    <textarea class="formulario__campo" name="mensagem" id="mensagem" cols="35" rows="5"></textarea>
+                    <textarea class="formulario__campo" name="mensagem" id="mensagem" cols="35" rows="15"></textarea>
                 </div>
                 <input class="formulario__botao" type="submit" value="Enviar">
             </form>
@@ -54,11 +65,11 @@
                 diferença para o sucesso de uma empresa, seja ela de qualquer segmento.
             </p>
         </section>
-    <div class="mapa">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d45097.48360454342!2d-46.71276034829132!3d-23.630767259801647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1640014571782!5m2!1spt-BR!2sbr"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>"
-    </div>
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d45097.48360454342!2d-46.71276034829132!3d-23.630767259801647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1640014571782!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>"
+        </div>
     </main>
     <footer class="rodape">
         <div class="rodape__linha-1">
@@ -81,7 +92,7 @@
                                 target="_blank">Facebook</a></li>
                         <li><a class="rodape__lista-links__item" href="https://instagram.com/passos_2000"
                                 target="_blank">Instagram</a></li>
-                    </ul>                    
+                    </ul>
                 </div>
                 <div class="rodape__coluna">
                     <h2 class="rodape__titulo">Links</h2>
@@ -93,11 +104,16 @@
                     </ul>
                 </div>
             </div>
-            </div> <!--Fim Container-->
+        </div>
+        <!--Fim Container-->
         <div class="rodape__linha-2">
             2021-Todos os Direitos Reservados - Gabriel Passos
         </div>
     </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -29,6 +29,12 @@
         font-weight: bold;
         box-shadow: 0 3px 5px#989898;
     }
+    label.error{
+        border-left: 4px solid #f00;
+        padding-left: 4px;
+        color: #f00;
+        margin-left: 3px;
+    }
     @media(min-width: $breakpoint-md){
         padding-bottom: 0;
         &__grupo{
